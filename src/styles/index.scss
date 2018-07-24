@@ -1,0 +1,64 @@
+// Fonts
+$font: 'Nunito', sans-serif;
+
+// Colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-light-grey: #F8F9FC;
+$color-grey: #9A9EA7;
+$color-grey-second: #DBE1E5;
+$color-ultramarine: #09168A;
+$color-green: #17DA9D;
+$color-green-bright: #1FCE43;
+$color-green-light: #20A47B;
+$color-dark-blue: #0D105B;
+$color-semi-blue: #8384AB;
+$color-blue: #0123E7;
+$color-violet: #EFEFFC;
+$color-violet-grey: #696C8C;
+$color-violet-bright: #BBC6F0;
+$color-yellow: #FFFE57;
+$color-red: #DA4830;
+$color-orange: #F6CB00;
+$color-light-blue: #F4F5F9;
+$color-grey-light: #F0F0F0;
+
+// shadows
+$box-shadow: 0 12px 24px rgba(148, 165, 180, 0.14);
+
+// Animations
+$transition-time: 0.3s;
+
+// width
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content;
+  }
+}
+
+@mixin rmin($width) {
+  @media only screen and (min-width: $width+ "px") {
+    @content;
+  }
+}
+
+// width and height
+@mixin rwh($width, $height) {
+  @media (min-height: $height + "px") and (min-width: $width+ "px") {
+    @content;
+  }
+}
+
+// height and width
+@mixin rhw($height, $width) {
+  @media (max-height: $height+ "px") and (max-width: $width+ "px") {
+    @content;
+  }
+}
+
+// height
+@mixin h($height) {
+  @media only screen and (max-height: $height+ "px") {
+    @content;
+  }
+}
