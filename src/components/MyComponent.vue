@@ -21,7 +21,7 @@ export default {
       // required: true,
       // default: '',
       // validator: v => STYLE_TYPES.includes(v),
-    },
+    }
     // someObject: {
     //   type: Object,
     //   default() {

@@ -7,15 +7,15 @@
 </template>
 
 <script>
-import { TweenLite } from 'gsap/TweenLite';
+// import { TweenLite } from 'gsap/TweenLite'
 
 export default {
   name: 'Person',
   props: ['name', 'age', 'sex'],
   data () {
     return {
-      tweenedAge: 0,
-    };
+      tweenedAge: 0
+    }
   },
   watch: {
     age (age) {
